@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    color: red;
+    border: 2px solid black;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: colorAnimation;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+@keyframes colorAnimation {
+    0%{
+        left: -400px; 
+        background-color: aquamarine;
+    }
+    25%{
+        left: 0px; 
+        background-color: aqua;
+    }
+    50%{
+        left: 500px; 
+        background-color: greenyellow;
+    }
+    75%{
+        left: 0px; 
+        background-color: aqua;
+    }
+    100%{
+        left: -400px; 
+        background-color: green;
+    }
+}

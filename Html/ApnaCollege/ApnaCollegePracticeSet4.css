@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+/* Working for Header */
+#Header{
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 60px;
+}
+a{
+    margin-right: 300px;
+    text-decoration: none;
+}
+button{
+    background-color: #f08804;
+}
+#amazon{
+    margin-left: 10px;
+    font-size: 35px;
+    color: #f08804;
+}
+
+
+/* Working for Content */
+#Content{
+    border: 5px solid white;
+    height: 810px;
+    background-color: rgba(188, 188, 237, 0.5);
+    
+}
+.contentbox{
+    margin-left: 3px;
+    padding-top: 58px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    height: 654px;
+    width: 625px;
+    display: inline-block;
+}
+
+
+
+
+
+/* Working for Footer */
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}

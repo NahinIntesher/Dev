@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StopWatch.css">
+    <title>CSS Level 2</title>
+</head>
+<body>
+    <Header>
+        <div>
+            <Strong>Timer</Strong>
+        </div>
+    </Header>
+
+    <div id="Content">
+        
+        <div id="blackbox">
+            <div class="number"> <h1>00</h1> </div>
+            <div class="number"> <h1>:</h1> </div>
+            <div class="number" id="minuteBox"> <h1>00</h1> </div>
+            <div class="number"> <h1>:</h1> </div>
+            <div class="number" id="secondBox"> <h1>00</h1> </div>
+        </div>  
+
+        <div id="HMSbox">
+            <lebel class="HMS">Hours</lebel>
+            <lebel class="HMS">Minutes</lebel>
+            <lebel class="HMS">Seconds</lebel>
+        </div> 
+
+        <div id="LastDiv">
+            <button id="setTimerBtn">Set Timer</button>
+            <input id="Setting" type="text" placeholder="Enter Second">
+            <button>Pause</button>
+            <button>Start now</button>
+            <button>Reset now</button>
+        </div>
+        
+        
+    </div>
+    <Footer>
+        Made with &hearts; by Nahin<br>
+        &#169; 
+    </footer>
+    <script>
+        var myInterval;
+
+        document.getElementById("setTimerBtn").onclick = function() {
+            var totalSecond = Number(document.getElementById("Setting").value);
+            var hours = parseInt(totalSecond/(60*60));
+            var minute = parseInt(totalSecond/60) - hours*60;
+            var second = totalSecond - hours*60*60 - minute*60;
+            clearInterval(myInterval);
+            startCounting(hours,minute,second);
+        }
+
+        function startCounting(hours, minute, second) {
+            if(minute>=1) {
+                document.getElementById("minuteBox").innerHTML = "<h1>"+minute+"</h1>";
+            }
+            myInterval = setInterval(function() {
+                document.getElementById("secondBox").innerHTML = "<h1>"+second+"</h1>";
+                if(second==0) {
+                    if(minute>=1) {
+                        minute--;
+                        document.getElementById("minuteBox").innerHTML = "<h1>"+minute+"</h1>";
+                        second=59;
+                    }
+                    else {
+                        clearInterval(myInterval);
+                    }
+                }
+                second--;
+            }, 1000);
+        }
+        
+
+
+    </script>
+</body>
+</html>

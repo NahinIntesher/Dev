@@ -1,0 +1,22 @@
+#Head1{
+    color:blue;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-weight: 900;
+    font-style: normal;
+}
+#Paragraph1{
+    color:rgb(36, 175, 15);
+    text-align: center;
+    line-height: 20px;
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}

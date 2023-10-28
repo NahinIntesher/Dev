@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    background-color: rgb(13, 68, 116);
+}
+
+#Navbar{
+    background-color: #0f1111;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 60px;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#amazon{
+    margin-left: 10px;
+    font-size: 35px;
+    color: #f08804;
+}
+
+#SearchAmazon{
+    background-color: white;
+}

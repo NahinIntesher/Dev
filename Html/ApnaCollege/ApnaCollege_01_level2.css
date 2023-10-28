@@ -1,0 +1,65 @@
+h1{
+    margin-left: 480px;
+    height: 100px;
+    width: 500px;
+    background-color: rgb(13, 255, 0);
+    padding-top: 50px;  
+    text-align: center;
+    border: 10px solid black;
+
+}
+h2{
+    margin-left: 270px;
+    /* text-align: center; */
+    border: 2px solid black;
+    width: 400px;
+    background-color: rgb(13, 255, 0);    
+}
+
+
+div{
+    height: 200px;
+    width: 1000px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 2px solid blue;
+    margin-left: 250px;
+    padding-top: 0px;
+}
+
+p{
+    background-color: rgb(240, 142, 240);
+    margin-bottom: 100px;
+}
+
+
+button:hover {
+  color: white;
+  background-color:black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+button{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+    /* 
+    {border-width: 5px;
+    border-style: solid;
+    border-color: black;} 
+    ==
+    border: 5px solid black; (Both do same work)
+    */
+    border: 5px solid black;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}

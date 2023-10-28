@@ -1,0 +1,24 @@
+body{
+    background-image: url(Night\ Light.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+
+#MainDiv{
+    border-radius: 5%;
+    padding-left: 50px;
+    padding-top: 50px;
+    color:greenyellow ;
+    margin: 100px 100px 100px 700px;
+    height: 700px;
+    width: 500px;
+    background-image: url(StarInSky.jpg);
+    background-size: cover;
+    position: absolute;
+}
+
+h3{
+    margin-left: 140px;
+    margin-bottom: 50px;
+    font-family: Cascadia Code;
+}
