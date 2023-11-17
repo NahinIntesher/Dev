@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div{
+    height: 100px;
+    border: 2px solid black;
+    display: flexbox;
+}
+
+#container{
+    font-family: 'Times New Roman';
+    background-color: rgb(171, 227, 206);
+    font-size: small;
+}

@@ -1,1 +1,1 @@
-document.getElementById("sum").innerHTML += 5 + 6;
+document.getElementById("sum").innerHTML = 5 + 6;
