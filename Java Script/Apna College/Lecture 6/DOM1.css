@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    padding: 0;
+}
+body{
+    background-color:midnightblue;
+}
+#main{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:blueviolet;
+}
+@keyframes slideLoop {
+    0%, 100% {
+        background-color:red;
+        transform: translateX(0);
+    }
+    25% {
+        background-color:aqua;
+        transform: translateX(-150%);
+    }
+    50% {
+        background-color:orange;
+        transform: translateX(0);
+    }
+    75% {
+        background-color:yellow;
+        transform: translateX(150%);
+    }
+}
+
+#myName{
+    margin: 50px;
+    position:relative;
+    animation: slideLoop 4s linear infinite; 
+    animation-duration: 8s;
+    animation-iteration-count: 10;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.myButton{
+    background-color:blue;
+    color: white;
+    height: 40px;
+    width: 300px;
+    margin: 5px;
+}
+
