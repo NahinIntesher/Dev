@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Converter</title>
+</head>
+<body>
+    <div id="FULL">
+
+        <div id="sidePanel">
+            
+            <a href="DistanceConverter.html">
+                <div id="distance" class="sidePanelElement">
+                    <div>Distance</div>
+                    <div id="DistanceLogo">
+                        <span style='font-size:60px;'>&#8651;</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="TemparatureConverter.html">
+                <div id="temparature" class="sidePanelElement">
+                    <div>Temparature</div>
+                    <div id="TemparatureLogo">
+                        <span style='font-size:60px;'>&#127777;</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="TimeConverter.html">
+                <div id="time" class="sidePanelElement">
+                    <div>Time</div>
+                    <div id="TimeLogo">
+                        <i style="font-size:60px" class="fa">&#xf017;</i>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div id="centerPanel">
+            <div id="centerPanelElement">
+                <!-- Convert Distance Title -->
+                <div id="Name" class="centerPanelElement">Convert Distance</div>
+
+                <!-- Input Box-->
+                <div><input id="inputPlace" type="text"></div>
+                
+                
+                <!-- Convert From -->
+                <div id="convert1st" class="centerPanelElement">
+                    <div id="convertFrom"> Convert From</div>
+                    <div id="convertFromOption">
+                        <select name="All" class="searchSelect" id="fromSelect">
+                            <option value="KiloMeter">Kilo Meter</option>
+                            <option value="Meter">Meter</option>
+                            <option value="CentiMeter">Centi Meter</option>
+                            <option value="Mile">Mile</option>
+                            <option value="Inch">Inch</option>
+                            <option value="Yard">Yard</option>
+                            <option value="Foot">Foot</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- Convert To -->
+                <div id="convert2nd" class="centerPanelElement">
+                    <div id="convertTo"> Convert To</div>
+                    <div id="convertToOption">
+                        <select name="All" class="searchSelect" id="toSelect">
+                            <option value="KiloMeter">Kilo Meter</option>
+                            <option value="Meter">Meter</option>
+                            <option value="CentiMeter">Centi Meter</option>
+                            <option value="Mile">Mile</option>
+                            <option value="Inch">Inch</option>
+                            <option value="Yard">Yard</option>
+                            <option value="Foot">Foot</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- Convert Button -->
+                <div id="Button" class="centerPanelElement">
+                    <button id="mainButton" type="button">Convert</button>
+                </div>
+
+
+                <!-- Output -->
+                <div id="Output" class="centerPanelElement">
+                    <p id="outputText"></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="DistanceConverter.js"></script>
+</body>
+</html>
