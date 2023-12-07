@@ -20,6 +20,7 @@ let winPatterns = [
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
         if(turn0){
+            box.style.color = "#3e4bb0";
             box.innerText = "O";
             turn0 = false;
             totalMoves--;
