@@ -39,6 +39,7 @@ boxes.forEach((box) => {
 resetBtn.addEventListener("click", () => {
     boxes.forEach((box) => {
         box.innerText = "";
+        box.style.color = "#b0413e";
         totalMoves = 9;
         enableBoxes();
     });
@@ -49,6 +50,7 @@ resetBtn.addEventListener("click", () => {
 newGameBtn.addEventListener("click", () => {
     boxes.forEach((box) => {
         box.innerText = "";
+        box.style.color = "#b0413e";
         totalMoves = 9;
         enableBoxes();
     });
