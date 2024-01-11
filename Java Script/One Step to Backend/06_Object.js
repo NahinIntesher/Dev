@@ -10,7 +10,7 @@ const person = {
             division: Khulna,
             country: Bangladesh,
         },
-        birthYear: 1987,
+        birthYear: "1987",
     },
     education: {
         depertment: "BBA",
