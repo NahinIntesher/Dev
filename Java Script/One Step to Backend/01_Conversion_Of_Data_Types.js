@@ -1,51 +1,77 @@
+// console.log("hello" === "hello");
+
+// const { countBy } = require("lodash");
+
+// const str1 = "hello";
+// const str2 = "hello";
+
+// console.log(str1 === str2);
+
+// const sym1 = Symbol("top secret");
+// const sym2 = Symbol("top secret");
+
+// console.log(sym1 === sym2);
+
+// const sym1 = Symbol.for("top");
+// const sym2 = Symbol.for("top");
+
+// console.log(sym1 === sym2);
+
+// const WIN = Symbol("WINDOW");
+// const AISLE = Symbol("AISLE");
+// const MID = Symbol("MIDDLE");
+
+// function reserveSeat(seatType) {
+//   switch (seatType) {
+//     case WIN:
+//       return console.log("you have a window seat");
+//     case AISLE:
+//       return console.log("you have a aisle seat");
+//     case MID:
+//       return console.log("you have a MIDDLE seat");
+//     default:
+//       return console.log("invalid seat option");
+//   }
+// }
+
+// reserveSeat(crew);
+
+//symbol
+// const privateInfo = Symbol("s1");
+
 // const user = {
-//     name: "Nahin Intesher",
-//     age: 22,
-//     greeting: function(){
-//         console.log(`Hi ${this.name}`);
-//     }
-// }
+//   name: "rohit",
+//   age: 21,
+//   address: "matuail",
+//   country: "bd",
+//   [privateInfo]: "slkfjlaskdjflsajfk",
+// };
 
-// user.greeting();
-// console.log(this); // print only curly braces
+// console.log(user["name"]);
+// console.log(user.name);
 
-// function hello(){
-//     console.log(this); // does not print only curly braces. Print a big object
-// }
+// console.log(user[privateInfo]);
 
-// func = () =>{
-//     console.log(this); // But arrow function will also print only curly braces.
-// }
+// const calculator = {
+//   add: function (a, b) {
+//     return a + b;
+//   },
+//   sub: function (a, b) {
+//     return a - b;
+//   },
+// };
 
+// console.log(calculator.add(2, 3));
+// console.log(calculator.sub(2, 3));
 
+let str = "0112230169";
+function check(value){
+  if(value === null || value === undefined){
+      return{statusMsg: "There is no value", convertedNumber: null};
+  }
+  const number = Number(value);
+  if (isNaN(number)){
+    return{statusMsg: "Not a valid number", convertedNumber: null};
+  }
 
-/* 1st wqy and begginer way */
-// const hello = function(namee){
-//     console.log(`Hi ${namee}`);
-// }
-
-/* 2nd way and intermediate way */
-// const hello = function(namee){
-//     console.log(`Hi ${namee}`);
-// }
-
-/* 3rd way and advance way */
-const hello = (namee) =>{
-    console.log(`Hi ${namee}`);
 }
-
-hello("Nahin");
-
-
-/* Return statement can be written as below */
-// const fun1 = (value) => {
-//     return value + 3;
-// }  
-
-/* Special: One line Return statement can also be written as below */
-const fun1 = (value) => value + 3; 
-
-arrowFunc = () =>{
-    console.log(this); // But arrow function will also print only curly braces.
-}
-arrowFunc();
