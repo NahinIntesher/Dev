@@ -30,11 +30,11 @@
 // }
 
 /* 3rd way and advance way */
-const hello = (namee) =>{
-    console.log(`Hi ${namee}`);
-}
+// const hello = (namee) =>{
+//     console.log(`Hi ${namee}`);
+// }
 
-hello("Nahin");
+// hello("Nahin");
 
 
 /* Return statement can be written as below */
@@ -43,9 +43,9 @@ hello("Nahin");
 // }  
 
 /* Special: One line Return statement can also be written as below */
-const fun1 = (value) => value + 3; 
+// const fun1 = (value) => value + 3; 
 
-arrowFunc = () =>{
-    console.log(this); // But arrow function will also print only curly braces.
+arrowFunc = () => {
+  console.log(this); // But arrow function will also print only curly braces.
 }
 arrowFunc();
