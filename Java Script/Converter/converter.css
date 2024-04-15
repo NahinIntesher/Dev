@@ -11,14 +11,14 @@ a{
     text-decoration: none;
 }
 #sidePanel a {
-    width: 80%;
+    width: 30vmin;
 }
 
 
 
 #sidePanel{
     background-color: rgb(164, 243, 84);
-    width: 400px;
+    width: 45vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,12 +34,13 @@ a{
     transform: translateY(0);
 }
 .sidePanelElement{
-    height: 150px;
-    width: 100%;
+    height: 25vmin;
+    width: 30vmin;
     color: white;
     background-color: rgb(72, 138, 6);
     font-weight: 900;
-    margin: 5px;
+    font-size: 3vmin;
+    margin: 2vmin;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
@@ -53,20 +54,20 @@ a{
 
 #centerPanel{
     background-color:wheat;
-    width: calc(100% - 400px);
+    width: calc(100% - 40%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 25vmin;
 }
 #centerPanelElement{
-    height: 500px;
-    width: 700px;
+    height: 500vmin;
+    width: 90vmin;
 }
 .centerPanelElement{
-    height: 50px;
-    width: 100%;
+    height: 8vmin;
+    width: 90vmin;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -75,28 +76,31 @@ a{
 
 #Name{
     background-color:wheat;
+    height: 8vmin;
+    width: 89vmin;
     display: flex;
     justify-content: center;
-    font-size: 250%;
+    font-size: 6vmin;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #inputPlace{
-    height: 50px;
-    width: 100%;
-    font-size: 100%;
-    padding-left: 10px;
+    height: 8vmin;
+    width: 89vmin;
+    font-size: 3vmin;
+    padding-left: 2vmin;
     font-family: system-ui;
     background-color:white;
 }
 
 .searchSelect{
     margin-left: 1px;
-    height: 50px;
-    width: 400px;
+    height: 8vmin;
+    width: 40vmin;
+    font-size: 3vmin;
+    margin-left: 1vmin;
     font-family: Arial;
     text-align: center;
-    font-size: medium;
 }
 #convert2nd{
     justify-content: space-between;
@@ -107,24 +111,16 @@ a{
 #convertFrom{
     font-family: fira code;
     font-weight: 700;
-    font-size: 110%;
-    margin-left: 0px;
-    margin-right: 5px;
+    font-size: 3vmin;
+    margin-left: 1vmin;
+    margin-right: 2vmin;
 }
 #convertTo{
     font-family: fira code;
     font-weight: 700;
-    font-size: 110%;
-    margin-left: 2px;
-    margin-right: 29px;
-}
-
-
-#convert1st{
-    background-color:wheat;
-}
-#convert2nd{
-    background-color:wheat;
+    font-size: 3vmin;
+    margin-left: 1vmin;
+    margin-right: 2vmin;
 }
 
 
@@ -142,9 +138,9 @@ a{
 }
 #mainButton{
     background-color:rgb(164, 243, 84);
-    height: 50px;
-    width: 100%;
-    font-size: 120%;
+    height: 8vmin;
+    width: 90vmin;
+    font-size: 4vmin;
     font-weight: 900;
     font-family: fira code;
     transition: all 100ms cubic-bezier(.23, 1, 0.32, 1);
@@ -157,6 +153,6 @@ a{
     background-color:rgb(212, 183, 130);
     display: flex;
     justify-content: center;
-    font-size: 180%;
+    font-size: 4vmin;
     font-family: 'Times New Roman', Times, serif;
 }
